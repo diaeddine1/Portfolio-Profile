@@ -1,31 +1,27 @@
-
-<div class="slide-container">
-    <div class="slide-content">
-        <div class="card-wrapper">
-            <div class="card">
-                <div class="image-content">
-                    <span class="overlay"></span>
-                    <div class="card-image">
-                        <img src="assets/tbate.jpg" class="card-img"/>
-                        
-    
-                    </div>
-    
-                </div>
-                <div class="card-content">
-                    <h2 class="name">The beginning after the end</h2>
-                    <p class="description"> a story about the incarnation of a king named Grey</p>
-                    <button class="button">View More</button>
-                </div>
-
-    
+<div id="hobbies" class="flex [height:max-content] justify-center items-center">
+    <p-carousel
+      [value]="hobby"
+      [numVisible]="3"
+      [numScroll]="3"
+      [circular]="true"
+      class="h-fit w-2/3"
+    >
+      <ng-template let-hobby pTemplate="item" class="bg-red-700">
+        <div class="border-1 surface-border border-round m-2 p-3 h-full">
+          <div class="mb-3 h-3/4 flex flex-col">
+            <div class=" h-3/4 mx-auto mb-5">
+              <img
+                [src]="hobby.image"
+                [alt]="hobby.name"
+                class="w-full h-full object-scale-down border-round"
+              />
+              <span>{{hobby.name}}</span>
             </div>
-
+          </div>
     
         </div>
-
-    
-    </div>
-
-
-</div>
+      </ng-template>
+    </p-carousel>
+    <div class=".titillium-web-light text-2xl">Reading Light Novels And Manhuas</div>
+  </div>
+  

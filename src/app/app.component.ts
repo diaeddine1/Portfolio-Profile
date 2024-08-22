@@ -15,6 +15,7 @@ import { ImagesSliderComponent } from './images-slider/images-slider.component';
     <navigation-bar></navigation-bar>
     <biographie></biographie>
    
+   
     <images-slider><images-slider/>
   `,
 })
