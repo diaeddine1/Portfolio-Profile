@@ -13,8 +13,9 @@ import { ButtonModule } from 'primeng/button';
 export class ImagesSliderComponent {
 
   hobby=[
+    
     {
-      "name":"Tbate 1",
+      "name":"The Beginning After The End",
       "image":"assets/tbate.jpg",
       "price":"19.99"
 
@@ -51,5 +52,6 @@ export class ImagesSliderComponent {
     },
   
   ]
+  
 
 }

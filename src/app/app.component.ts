@@ -5,18 +5,22 @@ import { BiographieComponent } from './biographie/biographie.component';
 import { HoveredImageComponent } from './hovered-image/hovered-image.component';
 import { HobbiesComponent } from './hobbies/hobbies.component';
 import { ImagesSliderComponent } from './images-slider/images-slider.component';
+import { ProjectsComponent } from './projects/projects.component';
+import { StudiesComponent } from './studies/studies.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NavigationBarComponent,BiographieComponent,HobbiesComponent,ImagesSliderComponent],
+  imports: [RouterOutlet,NavigationBarComponent,BiographieComponent,HobbiesComponent,ImagesSliderComponent,ProjectsComponent,StudiesComponent],
   styleUrl: './app.component.css',
   template:`
  
     <navigation-bar></navigation-bar>
     <biographie></biographie>
-   
+    <studies></studies>
+    <projects></projects>
    
     <images-slider><images-slider/>
+    
   `,
 })
 export class AppComponent {
