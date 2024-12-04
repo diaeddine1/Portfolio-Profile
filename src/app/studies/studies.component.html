@@ -1,104 +1,95 @@
-
-<style>@import url('https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap');</style>
-<h1 class="text-3xl text-center p-10 text-white bg-4361EE">My Growth Journey</h1>
-
+<style>
+  @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400&display=swap");
+</style>
+<h1 class="text-3xl text-center p-10 text-white bg-4361EE">
+  My Growth Journey
+</h1>
 
 <section class="design-section">
   <div class="timeline">
-    
     <div class="timeline-empty text-right mr-5">
-      {{displayedMilestones[0].year}}
+      {{ displayedMilestones[0].year }}
     </div>
 
     <div class="timeline-middle">
-      
       <div class="timeline-circle"></div>
     </div>
     <div class="timeline-component timeline-content">
-      <h3>{{displayedMilestones[0].title}}</h3>   
-      <h4>{{displayedMilestones[0].year}}</h4>
-      <p>{{displayedMilestones[0].description}} </p>
+      <h4>{{ displayedMilestones[0].year }}</h4>
+      <h3>{{ displayedMilestones[0].title }}</h3>
+     
+      <p>{{ displayedMilestones[0].description }}</p>
     </div>
     <div class="timeline-component timeline-content">
-      <h3>{{displayedMilestones[1].title}}</h3>   
-      <h4>{{displayedMilestones[1].year}}</h4>
-      <p>{{displayedMilestones[1].description}} </p>
+      <h4>{{ displayedMilestones[1].year }}</h4>
+      <h3>{{ displayedMilestones[1].title }}</h3>
+     
+      <p>{{ displayedMilestones[1].description }}</p>
     </div>
     <div class="timeline-middle">
       <div class="timeline-circle"></div>
     </div>
-    <div class="timeline-empty">
-      <div class="timeline-empty">
-        {{displayedMilestones[0].year}}
-      </div>
+
+    <div class="timeline-empty ml-5">
+      {{ displayedMilestones[1].year }}
     </div>
 
-    <div class="timeline-empty">
-      <div class="timeline-empty">
-        {{displayedMilestones[0].year}}
-      </div>
-    </div>
-
-    <div class="timeline-middle">
-      <div class="timeline-circle"></div>
-    </div>
-    <div class=" timeline-component timeline-content">
-      <h3>{{displayedMilestones[2].title}}</h3>   
-      <h4>{{displayedMilestones[2].year}}</h4>
-      <p>{{displayedMilestones[2].description}} </p>
-    </div>
-    <div class=" timeline-component timeline-content">
-      <h3>{{displayedMilestones[3].title}}</h3>   
-      <h4>{{displayedMilestones[3].year}}</h4>
-      <p>{{displayedMilestones[3].description}} </p>
-    </div>
-    <div class="timeline-middle">
-      <div class="timeline-circle"></div>
-    </div>
-    <div class="timeline-empty">
-      <div class="timeline-empty">
-        {{displayedMilestones[0].year}}
-      </div>
-    </div>
-
-    <div class="timeline-empty">
-      <div class="timeline-empty">
-        {{displayedMilestones[0].year}}
-      </div>
+    <div class="timeline-empty text-right mr-5">
+      {{ displayedMilestones[2].year }}
     </div>
 
     <div class="timeline-middle">
       <div class="timeline-circle"></div>
     </div>
-    <div class=" timeline-component timeline-content">
-      <h3>{{displayedMilestones[4].title}}</h3>   
-      <h4>{{displayedMilestones[4].year}}</h4>
-      <p>{{displayedMilestones[4].description}} </p>
-    </div>
-
-
-    <div class=" timeline-component timeline-content">
-      <h3>{{displayedMilestones[5].title}}</h3>   
-      <h4>{{displayedMilestones[5].year}}</h4>
-      <p>{{displayedMilestones[5].description}} </p>
-    </div>
-    <div class="timeline-middle">
-      <div class="timeline-circle"></div>
-    </div>
-    <div class="timeline-empty">
-      <div class="timeline-empty">
-        {{displayedMilestones[0].year}}
-      </div>
-    </div>
-
-    <div class="timeline-empty">
-      <div class="timeline-empty">
-        {{displayedMilestones[0].year}}
-      </div>
-    </div>
-
-    <div class="timeline-middle">
+    <div class="timeline-component timeline-content">
+      <h4>{{ displayedMilestones[2].year }}</h4>
+      <h3>{{ displayedMilestones[2].title }}</h3>
     
+      <p>{{ displayedMilestones[2].description }}</p>
     </div>
+    <div class="timeline-component timeline-content">
+      <h4>{{ displayedMilestones[3].year }}</h4>
+      <h3>{{ displayedMilestones[3].title }}</h3>
+      
+      <p>{{ displayedMilestones[3].description }}</p>
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+
+    <div class="timeline-empty ml-5">
+      {{ displayedMilestones[3].year }}
+    </div>
+
+    <div class="timeline-empty text-right mr-5">
+      {{ displayedMilestones[4].year }}
+    </div>
+
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+    <div class="timeline-component timeline-content">
+      <h4>{{ displayedMilestones[4].year }}</h4>
+      <h3>{{ displayedMilestones[4].title }}</h3>
+    
+      <p>{{ displayedMilestones[4].description }}</p>
+    </div>
+
+    <div class="timeline-component timeline-content">
+      <h4>{{ displayedMilestones[5].year }}</h4>
+      <h3>{{ displayedMilestones[5].title }}</h3>
+      
+      <p>{{ displayedMilestones[5].description }}</p>
+    </div>
+    <div class="timeline-middle">
+      <div class="timeline-circle"></div>
+    </div>
+    
+
+    <div class="timeline-empty ml-5">
+      {{ displayedMilestones[5].year }}
+    </div>
+
+    <div class="timeline-middle"></div>
   </div>
 </section>

@@ -18,7 +18,10 @@ module.exports = {
           "halfsvw":"50svw",
           "thirdsvw":"33svw"
         }
-      }
+      },
+      lineClamp: {
+        10: '10',
+      },
     },
   },
   plugins: [],

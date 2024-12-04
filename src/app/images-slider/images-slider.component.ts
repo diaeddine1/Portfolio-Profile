@@ -17,40 +17,56 @@ export class ImagesSliderComponent {
     {
       "name":"The Beginning After The End",
       "image":"assets/tbate.jpg",
-      "price":"19.99"
+      
 
     },
     {
       "name":"Tbate 2",
       "image":"assets/volume8.jpg",
-      "price":"19.99"
+    
 
     },
     {
       "name":"Tbate 3",
       "image":"assets/volume9.jpg",
-      "price":"19.99"
+      
 
     },
+   
     {
-      "name":"ORV 1",
-      "image":"assets/orv1.jpg",
-      "price":"19.99"
-
-    },
-    {
-      "name":"ORV 2",
+      "name":"Omniscient Reader's Viewpoint",
       "image":"assets/orv3.jpg",
-      "price":"19.99"
+
 
     },
     {
-      "name":"ORV 3",
-      "image":"assets/orv2.jpg",
-      "price":"19.99"
+      "name":"Omniscient Reader's Viewpoint",
+      "image":"assets/ORV.jpeg",
+   
 
     },
-  
+    {
+      "name":"Omniscient Reader's Viewpoint",
+      "image":"assets/orv2.jpg",
+    
+
+    },
+    {
+      "name":"Lord of Mysteries",
+      "image":"assets/LOTM.jpg",
+      
+    },
+    {
+      "name":"Lord of Mysteries",
+      "image":"assets/LOTM2 (1).jpg",
+      
+    },
+    {
+      "name":"Lord of Mysteries",
+      "image":"assets/LOM (1).jpg",
+      
+    },
+    
   ]
   
 

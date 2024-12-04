@@ -15,6 +15,7 @@
 
   #shift-left {
     width: 100vw; /* Make the text container take the full width of the screen */
+    transform: translateX(-100px);
     transition: width 0.3s; /* Smooth transition for the width change */
   }
 }
