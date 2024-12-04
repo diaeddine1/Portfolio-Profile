@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'language-toggle',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './language-toggle.component.css'
 })
 export class LanguageToggleComponent {
+  constructor(public languageService: LanguageService) {}
 
+  toggleLanguage(): void {
+    this.languageService.toggleLanguage();
+  }
 }

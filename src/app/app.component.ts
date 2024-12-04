@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component,ElementRef } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { BiographieComponent } from './biographie/biographie.component';
@@ -11,18 +11,17 @@ import { StudiesComponent } from './studies/studies.component';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet,NavigationBarComponent,BiographieComponent,HobbiesComponent,ImagesSliderComponent,ProjectsComponent,StudiesComponent],
+  templateUrl:'./app.component.html',
   styleUrl: './app.component.css',
-  template:`
- 
-    <navigation-bar></navigation-bar>
-    <biographie></biographie>
-    <studies></studies>
-    <projects></projects>
-   
-    <images-slider><images-slider/>
-    
-  `,
+  
 })
 export class AppComponent {
   title = 'Portfolio';
+  scrollToId(Id:string):void{
+    const href = document.getElementById(Id);
+    if (href){
+      href.scrollIntoView({behavior:'smooth',block:"start"});
+    }
+
+  }
 }

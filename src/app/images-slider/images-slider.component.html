@@ -1,4 +1,4 @@
-<div id="hobbies" class="grid grid-cols-1 place-items-center gap-0">
+<div class="grid grid-cols-1 place-items-center gap-0 w-[50svw]">
   <div class=".titillium-web-light text-2xl my-10">Reading Light Novels And Manhuas</div>
     <p-carousel
       [value]="hobby"
@@ -6,11 +6,10 @@
       [numScroll]="3"
       [circular]="true"
       class="w-11/12 py-10"
-
     >
       <ng-template let-hobby pTemplate="item" class="bg-red-700">
         
-        <div class="h-full w-5/6">
+        <div class="h-full w-6/6">
           
           <div class="h-full flex justify-center">
               
@@ -19,12 +18,9 @@
                 [alt]="hobby.name"
                 class="w-5/6"
               />
-
-              
               <!-- <span class="h-96">{{group.name}}</span> -->
           </div>
          
-
         </div>
         
       </ng-template>

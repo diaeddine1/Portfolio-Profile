@@ -1,25 +1,23 @@
 
 
-<div class="flex justify-around w-100% bg-green-400 h-80">
+<div id="bio" class="flex justify-around w-100% bg-4895EF h-fit py-10">
     
-    <div class=" flex items-center hover:[transform:rotateY(180deg)] duration-100">
-        
+    <div id="disappear" class="flex justify-center hover:[transform:rotateY(180deg)] duration-100 w-1/4  ">
         <hovered-image></hovered-image>
+
     </div>
         
-    <div class="flex flex-col items-end justify-center">
-        <span class="titillium-web-semibold-italic h-fit p-3">Hi, My Name is Dia Eddine Aberane, and I am a passionate Software Engineer 
-            with a strong background in developing scalable and efficient applications.
+    <div id="shift-left" class="flex flex-col justify-center w-3/4 items-center bg-black text-white">
+        <span class="titillium-web-semibold-italic h-fit p-3">
+            {{ displayedBio.intro }}
         </span>
 
         <span class="titillium-web-bold h-fit p-3">
-        I specialize in full-stack development, with expertise in technologies related to JAVA & JAVASCRIPT
-
+            {{ displayedBio.specialization }}
         </span>
 
         <span class="titillium-web-bold h-fit p-3">
-            I Also hold a Master's degree in Artificial Intelligence, where I gained 
-            deep insights into  advanced machine/Deep learning techniques
+            {{ displayedBio.degree }}
         </span>
     </div>
 

@@ -1,12 +1,16 @@
-<ul class="flex justify-around items-center w-100% h-20 bg-cyan-50">
+<ul class="flex justify-around items-center w-100% h-20 bg-4CC9F0 text-white">
 
-    <li>About Me
+    <li><a class="hover:cursor-pointer" (click)="navigateTo('Biographie')">About Me</a> 
     </li>
 
-    <li>Projects
+    <li><a class="hover:cursor-pointer" (click)="navigateTo('Milestones')">Milestones</a> 
     </li>
 
-    <li><a href="#hobbies" class="scroll-smooth">Hobbies</a>
+
+    <li><a class="hover:cursor-pointer" (click)="navigateTo('Projects')"> Projects </a>
+    </li>
+
+    <li><a class="hover:cursor-pointer" (click)="navigateTo('Hobbies')">Hobbies</a>
     </li>
 
     <li>Socials
