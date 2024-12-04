@@ -1,7 +1,4 @@
-#gridcol{
-  display: grid;
-  grid-template-columns: 500px 200px;
-}
+
 .titillium-web-extralight {
     font-family: "Titillium Web", sans-serif;
     font-weight: 200;
