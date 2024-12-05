@@ -1,3 +1,10 @@
+/* Change the color of the carousel arrows to white */
+::ng-deep .carousel-prev-icon, ::ng-deep .carousel-next-icon {
+  color: white;
+}
+
+
+
 .titillium-web-extralight {
     font-family: "Titillium Web", sans-serif;
     font-weight: 200;
