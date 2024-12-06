@@ -4,8 +4,15 @@
 }
 
 
-body{
-  caret-color: transparent !important;
+html, body {
+	background-color: #000;
+}
+h2, a, p {
+	color: #fff;
+	text-decoration: none;
+}
+p>a {
+	color: #fd084a;
 }
 .blink {
   animation: blink 0.5s infinite;
@@ -13,18 +20,12 @@ body{
 @keyframes blink{
   to { opacity: .0; }
 }
-
-.header-sub-title {
-
- 
-  padding: 0.1em;
+.flex {
+	display: flex;
 }
-
-.cursor {
-  display: inline-block;
-  width: 1px;
-  background-color: black;
-  animation: blink 0.7s steps(2, start) infinite;
+.header-sub-title {
+  color: #fff;
+  padding: 0.1em;
 }
 
 @media screen and (max-width: 990px) {

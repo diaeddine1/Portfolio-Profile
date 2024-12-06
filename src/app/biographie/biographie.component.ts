@@ -44,7 +44,7 @@ export class BiographieComponent implements OnInit {
   ngOnInit(): void {
     this.startTypingEffect();
   }
-  words = ["SOFTWARE ENGINEER.", "DATA ANALYST.", "DATA ENGINEER."];
+  words = ["SOFTWARE DEVELOPER.", "DATA ANALYST.", "DATA ENGINEER."];
   currentWordIndex = 0;
   typingInterval: any;
   displayedText = '';
