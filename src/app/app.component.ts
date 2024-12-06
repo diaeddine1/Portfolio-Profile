@@ -8,10 +8,11 @@ import { ImagesSliderComponent } from './images-slider/images-slider.component';
 import { ProjectsComponent } from './projects/projects.component';
 import { StudiesComponent } from './studies/studies.component';
 import { ExperienceComponent } from './experience/experience.component';
+import { SocialsComponent } from './socials/socials.component';
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet,NavigationBarComponent,BiographieComponent,HobbiesComponent,ImagesSliderComponent,ProjectsComponent,StudiesComponent,ExperienceComponent],
+  imports: [RouterOutlet,NavigationBarComponent,BiographieComponent,HobbiesComponent,ImagesSliderComponent,ProjectsComponent,StudiesComponent,ExperienceComponent,SocialsComponent],
   templateUrl:'./app.component.html',
   styleUrl: './app.component.css',
   
