@@ -19,6 +19,9 @@ module.exports = {
           "thirdsvw":"33svw"
         }
       },
+      height:{
+        "halfsvh":"100svh",
+      },
       lineClamp: {
         10: '10',
       },

@@ -1,6 +1,30 @@
 #bio{
   overflow-wrap: break-word !important;
+  background-image: url(https://bepatrickdavid.com/images/herobg-hd.jpg);
+}
+
+
+body{
+  caret-color: transparent !important;
+}
+.blink {
+  animation: blink 0.5s infinite;
+}
+@keyframes blink{
+  to { opacity: .0; }
+}
+
+.header-sub-title {
+
  
+  padding: 0.1em;
+}
+
+.cursor {
+  display: inline-block;
+  width: 1px;
+  background-color: black;
+  animation: blink 0.7s steps(2, start) infinite;
 }
 
 @media screen and (max-width: 990px) {

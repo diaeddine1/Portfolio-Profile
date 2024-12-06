@@ -1,26 +1,70 @@
+<div id="bio" class="grid grid-cols-2 h-svh">
+  <ul
+    class="col-span-2 flex justify-around items-center w-100% h-20 text-white text-2xl"
+  >
+    <li>
+      <a class="hover:cursor-pointer" (click)="navigateTo('Biographie')"
+        >About Me</a
+      >
+    </li>
 
+    <li>
+      <a class="hover:cursor-pointer" (click)="navigateTo('Milestones')"
+        >Milestones</a
+      >
+    </li>
 
-<div id="bio" class="flex justify-around w-100% bg-[#1f1f1f] h-fit py-10">
-    
-    <div id="disappear" class="flex justify-center hover:[transform:rotateY(180deg)] duration-100 w-1/4  ">
+    <li>
+      <a class="hover:cursor-pointer" (click)="navigateTo('Experience')"
+        >Experience</a
+      >
+    </li>
+
+    <li>
+      <a class="hover:cursor-pointer" (click)="navigateTo('Projects')">
+        Projects
+      </a>
+    </li>
+
+    <li>
+      <a class="hover:cursor-pointer" (click)="navigateTo('hobbies')"
+        >Hobbies</a
+      >
+    </li>
+
+    <li>Socials</li>
+
+    <li>Languages</li>
+  </ul>
+  <!-- <div id="disappear" class="flex justify-center hover:[transform:rotateY(180deg)] duration-100 w-1/4  ">
         <hovered-image></hovered-image>
 
-    </div>
-        
-    <div id="shift-left" class="flex flex-col justify-center w-3/4 items-center text-white">
-        <span class="titillium-web-semibold-italic h-fit p-3">
-            {{ displayedBio.intro }}
-        </span>
+    </div> -->
+    <!-- <h1 class="text-3xl text-white text-center">SOFTWARE ENGINEER</h1> -->
 
-        <span class="titillium-web-bold h-fit p-3">
-            {{ displayedBio.specialization }}
-        </span>
+    <div class="grid grid-cols-1 ml-44 h-fit gap-y-10">
+        <h1 class="text-5xl text-white">Hi,</h1>
+        <h1 class="text-5xl text-white">I'm Dia Eddine Aberane,</h1>
+        <p class="header-sub-title text-5xl text-white w-[400px]">
+          {{ displayedText }}<span class="cursor">|</span>
+        </p>
+      </div>
+      
 
-        <span class="titillium-web-bold h-fit p-3">
-            {{ displayedBio.degree }}
-        </span>
-    </div>
+  <div
+    id="shift-left"
+    class="flex flex-col justify-start items-center text-white text-2xl bg-slate-950"
+  >
+    <span class="h-fit p-3 w-3/4">
+      {{ displayedBio.intro }}
+    </span>
 
-  
+    <span class="h-fit p-3 w-3/4">
+      {{ displayedBio.specialization }}
+    </span>
 
+    <span class="h-fit p-3 w-3/4">
+      {{ displayedBio.degree }}
+    </span>
+  </div>
 </div>
