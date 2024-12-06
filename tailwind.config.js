@@ -3,10 +3,14 @@ module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
     extend: {
+      fontFamily:{
+        "poppins-regular":["Poppins", 'sans-serif'],
+      },
       skew:{
         "180":"30deg",
       },
       colors:{
+        '6DAAF2':"#6DAAF2",
         '4CC9F0':"#4CC9F0",
         '4895EF':"#4895EF",
         '4361EE':'#4361EE',

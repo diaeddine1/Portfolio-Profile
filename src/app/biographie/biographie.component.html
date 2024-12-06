@@ -1,6 +1,6 @@
-<div id="bio" class="grid grid-cols-2 h-svh">
+<div id="bio" class="grid grid-cols-2 h-svh items-center font-poppins-regular">
   <ul
-    class="col-span-2 flex justify-around items-center w-100% h-20 text-white text-2xl"
+    class="col-span-2 flex justify-around items-center w-100% h-20 text-white text-2xl fixed top-0 right-0 left-0 z-10"
   >
     <li>
       <a class="hover:cursor-pointer" (click)="navigateTo('Biographie')"
@@ -38,7 +38,7 @@
       >
     </li>
 
-    <li>Languages</li>
+    <language-toggle></language-toggle>
   </ul>
   <!-- <div id="disappear" class="flex justify-center hover:[transform:rotateY(180deg)] duration-100 w-1/4  ">
         <hovered-image></hovered-image>

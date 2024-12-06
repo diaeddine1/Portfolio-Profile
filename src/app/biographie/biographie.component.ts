@@ -1,11 +1,12 @@
 import { Component, EventEmitter, Output, OnInit } from '@angular/core';
 import { HoveredImageComponent } from '../hovered-image/hovered-image.component';
 import { LanguageService } from '../services/language.service';
+import { LanguageToggleComponent } from '../language-toggle/language-toggle.component';
 
 @Component({
   selector: 'biographie',
   standalone: true,
-  imports: [HoveredImageComponent],
+  imports: [HoveredImageComponent,LanguageToggleComponent],
   templateUrl: './biographie.component.html',
   styleUrls: ['./biographie.component.css'], // Corrected property
 })

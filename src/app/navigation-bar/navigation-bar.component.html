@@ -1,4 +1,4 @@
-<ul class="flex justify-around items-center w-100% h-20 bg-[#AD3BFF] text-white">
+<!-- <ul class="flex justify-around items-center w-100% h-20 bg-[#AD3BFF] text-white">
 
     <li><a class="hover:cursor-pointer" (click)="navigateTo('Biographie')">About Me</a> 
     </li>
@@ -23,4 +23,44 @@
     <li>
         <language-toggle></language-toggle>
     </li>
-</ul>
+</ul> -->
+<!-- layout.component.html -->
+<div id="bio" class="grid grid-cols-2 h-fit items-center font-poppins-regular bg-[#1f1f1f]">
+    <ul
+      class="col-span-2 flex justify-around items-center w-100% h-20 text-white text-2xl"
+    >
+      <li>
+        <a class="hover:cursor-pointer" (click)="navigateTo('Biographie')">
+          About Me
+        </a>
+      </li>
+      <li>
+        <a class="hover:cursor-pointer" (click)="navigateTo('Milestones')">
+          Milestones
+        </a>
+      </li>
+      <li>
+        <a class="hover:cursor-pointer" (click)="navigateTo('Experience')">
+          Experience
+        </a>
+      </li>
+      <li>
+        <a class="hover:cursor-pointer" (click)="navigateTo('Projects')">
+          Projects
+        </a>
+      </li>
+      <li>
+        <a class="hover:cursor-pointer" (click)="navigateTo('hobbies')">
+          Hobbies
+        </a>
+      </li>
+      <li>
+        <a class="hover:cursor-pointer" (click)="navigateTo('socials')">
+          Socials
+        </a>
+      </li>
+      <li>Languages</li>
+    </ul>
+
+  </div>
+  
