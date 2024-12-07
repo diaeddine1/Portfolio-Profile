@@ -1,4 +1,4 @@
-<div id="bio" class="grid grid-cols-2 h-svh items-center font-poppins-regular">
+<div id="bio" class="grid grid-cols-2 h-svh items-center font-poppins-regular overflow-hidden">
   <ul
     class="col-span-2 flex justify-around items-center w-100% h-20 text-white text-2xl fixed top-0 right-0 left-0 z-10"
   >
@@ -47,8 +47,8 @@
   <!-- <h1 class="text-3xl text-white text-center">SOFTWARE ENGINEER</h1> -->
 
   <div class="grid grid-cols-1 ml-40 h-fit gap-y-10 w-full text-wrap">
-    <h1 class="text-5xl text-white">Hi,</h1>
-    <h1 class="text-5xl text-white">I'm Dia Eddine Aberane,</h1>
+    <h1 class="text-5xl text-white">{{ displayedBio.welcome }}</h1>
+    <h1 class="text-5xl text-white">{{ displayedBio.name }}</h1>
     <p class="header-sub-title text-5xl text-white w-fit">
       {{ displayedText }}<span class="cursor blink">|</span>
     </p>

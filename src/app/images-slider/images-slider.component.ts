@@ -20,12 +20,12 @@ export class ImagesSliderComponent {
       
 
     },
-    {
-      "name":"Tbate 2",
-      "image":"assets/volume8.jpg",
+    // {
+    //   "name":"Tbate 2",
+    //   "image":"assets/volume8.jpg",
     
 
-    },
+    // },
     {
       "name":"Tbate 3",
       "image":"assets/volume9.jpg",

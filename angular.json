@@ -22,6 +22,16 @@
               "tsConfig": "tsconfig.app.json",
             "assets": [
                 "src/assets",
+                {
+                  "glob": "**/*",
+                  "input": "src/assets/draco",
+                  "output": "/assets/draco/"
+                },
+                {
+                  "glob": "**/*",
+                  "input": "src/assets/3d-model",
+                  "output": "/assets/3d-model/"
+                },
                 "src/favicon.ico" 
               ],
               "styles": [

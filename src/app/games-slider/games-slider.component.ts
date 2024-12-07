@@ -11,10 +11,10 @@ import { CarouselModule } from 'primeng/carousel';
 export class GamesSliderComponent {
 
   hobby=[
-    {
-      "name":"Volley-Ball",
-      "image":"assets/Volleyball.jpg",
-    },
+    // {
+    //   "name":"Volley-Ball",
+    //   "image":"assets/Volleyball.jpg",
+    // },
     {
       "name":"Volley-Ball",
       "image":"assets/League.jpg",

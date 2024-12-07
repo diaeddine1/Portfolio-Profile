@@ -19,6 +19,8 @@ export class BiographieComponent implements OnInit {
 
   Biographie = {
     English: {
+      welcome : "Hi,",
+      name:`I\'m Dia Eddine Aberane,`,
       intro: `I am a passionate Software Engineer 
               with a strong background in developing scalable and efficient applications.`,
       specialization: `I specialize in full-stack development, with expertise in technologies related to JAVA & JAVASCRIPT.`,
@@ -26,6 +28,8 @@ export class BiographieComponent implements OnInit {
               deep insights into advanced machine/deep learning techniques.`,
     },
     French: {
+      welcome : "Salut,",
+      name:"Je suis Dia Eddine Aberane,",
       intro: `Je suis un ingénieur logiciel passionné 
               avec une solide expérience dans le développement d'applications évolutives et efficaces.`,
       specialization: `Je me spécialise dans le développement full-stack, avec une expertise dans les technologies liées à JAVA et JAVASCRIPT.`,
