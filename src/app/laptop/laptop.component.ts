@@ -52,7 +52,7 @@ export class LaptopComponent implements AfterViewInit, OnDestroy {
       0.1,
       100
     );
-    this.camera.position.set(0, 1.5, 5); // Adjust Y and Z for framing
+    this.camera.position.set(0, 1.5, 6); // Adjust Y and Z for framing
     this.camera.lookAt(0, 1, 0); // Focus on model's center
   
     // Set up the renderer

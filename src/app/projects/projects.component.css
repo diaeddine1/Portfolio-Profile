@@ -1,0 +1,14 @@
+#changing{
+    position: absolute;
+    top:31%;
+    left: 49.5%;
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+}
+
+#project-name{
+    font-family: "kanit", sans-serif;
+    -webkit-text-stroke: 1px white;
+    cursor: pointer;
+    padding: 5px;
+}
