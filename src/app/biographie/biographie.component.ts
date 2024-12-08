@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Output, OnInit } from '@angular/core';
+import { Component, EventEmitter, Output, OnInit, HostListener} from '@angular/core';
 import { HoveredImageComponent } from '../hovered-image/hovered-image.component';
 import { LanguageService } from '../services/language.service';
 import { LanguageToggleComponent } from '../language-toggle/language-toggle.component';
@@ -6,7 +6,7 @@ import { LanguageToggleComponent } from '../language-toggle/language-toggle.comp
 @Component({
   selector: 'biographie',
   standalone: true,
-  imports: [HoveredImageComponent,LanguageToggleComponent],
+  imports: [LanguageToggleComponent],
   templateUrl: './biographie.component.html',
   styleUrls: ['./biographie.component.css'], // Corrected property
 })
@@ -87,4 +87,16 @@ export class BiographieComponent implements OnInit {
 
     deleting();
   }
+
+  @HostListener('window:scroll',['$event'])
+  onWindowScroll() {
+    let element = document.querySelector('#nav-bar') as HTMLElement;
+    let biographie = document.querySelector('#bio') as HTMLElement
+    if (window.scrollY > biographie.offsetHeight) {
+      element.classList.add('navbar-scrolled');
+    } else {
+      element.classList.remove('navbar-scrolled');
+    }
+  }
+  
 }

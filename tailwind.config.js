@@ -24,7 +24,9 @@ module.exports = {
         }
       },
       height:{
-        "halfsvh":"100svh",
+        "halfsvh":"50svh",
+        "twothirds":"75svh",
+        "eightyfire":"85svh"
       },
       lineClamp: {
         10: '10',

@@ -1,9 +1,9 @@
 #changing{
 
 
-   
+    height: 310px;
     position: absolute;
-    top:32.5%;
+    top:30.5%;
     left: 49.5%;
     transform: translate(-50%, -50%);
     border-radius: 10px;
