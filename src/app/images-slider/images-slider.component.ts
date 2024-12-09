@@ -13,7 +13,18 @@ import { ButtonModule } from 'primeng/button';
 export class ImagesSliderComponent {
 
   hobby=[
-    
+    {
+      "name":"Mythologie Greece",
+      "image":"assets/Greece.png"
+    },
+    {
+      "name":"Mythologie Egypyt",
+      "image":"assets/Egypt.jpg"
+    },
+    {
+      "name":"Mythologie Christian",
+      "image":"assets/Christians.jpg"
+    },
     {
       "name":"The Beginning After The End",
       "image":"assets/tbate.jpg",

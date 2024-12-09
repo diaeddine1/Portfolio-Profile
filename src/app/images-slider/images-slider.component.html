@@ -1,4 +1,4 @@
-<div class="grid grid-cols-1 place-items-center gap-0 w-11/12">
+<div class="grid grid-cols-1 place-items-center gap-0">
   <!-- Add this when u want the normal one w-[50svw] -->
 
   <p-carousel
@@ -6,12 +6,12 @@
     [numVisible]="numVisible"
     [numScroll]="3"
     [circular]="true"
-    class="w-11/12 py-10"
+    class="w-11/12"
   >
-    <ng-template let-hobby pTemplate="item" class="bg-red-700">
-      <div class="h-full w-6/6">
-        <div class="h-full flex justify-center">
-          <img [src]="hobby.image" [alt]="hobby.name" class="w-5/6" />
+    <ng-template let-hobby pTemplate="item">
+      <div class="h-full">
+        <div class="h-full flex justify-center object-contain">
+          <img [src]="hobby.image" [alt]="hobby.name" class="w-11/12" />
           <!-- <span class="h-96">{{group.name}}</span> -->
         </div>
       </div>

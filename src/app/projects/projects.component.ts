@@ -1,42 +1,89 @@
 import { NgFor } from '@angular/common';
 import { Component } from '@angular/core';
+import { LanguageService } from '../services/language.service';
 
 @Component({
   selector: 'projects',
   standalone: true,
   templateUrl: './projects.component.html',
   styleUrls: ['./projects.component.css'],
+  imports:[NgFor]
   
 })
 export class ProjectsComponent {
-  projects = [
-    {
-      Project: 'WebSockets Application',
-      Description:
-      'This project features a Python WebSocket server integrated with a Machine Learning model to detect humans and cars from live camera feeds or video files. Upon detection, it sends real-time notifications with screenshots to the client interface. Additional functionalities include broadcasting messages, handling image data, and processing object detection results seamlessly.',
-      Technologies: 'Python, Yolo, OpenCV, Matplotlib, WebSocket, Javascript',
-      Image:'../../assets/Prediction4.png',
-      Link: 'https://github.com/diaeddine1/WebSocket-Server.git'
-    },
-    {
-      Project: 'Pharma Plants Application',
-      Description:'A Flutter application that enables users to search for medicinal herbs and plants, explore their health benefits, and discover effective combinations with other herbs for enhanced wellness. The app features an intuitive interface, a detailed herb database, and personalized suggestions for holistic health solutions.',
-      Technologies: 'Flutter, Firebase, Image Picker',
-      Image:'../../assets/dofus.png',
-      Link: 'https://github.com/diaeddine1/Plants-Project-Flutter'
-    },
-    {
-      Project: 'Trip Advisor Application',
-      Description:'This Project allows users to search for restaurants in Casablanca scraped from TripAdvisor, mark them as favorites, view their locations on an interactive map, and leave reviews. The platform offers an easy-to-navigate interface for discovering and engaging with local dining options.',
-      Technologies: 'Spring Boot, React, Spring Security, Scrapy, Tailwind CSS, Google Maps API',
-      Image:'../../assets/League.jpg',
-      Link: 'https://github.com/diaeddine1/Gestion_Restaurant'
+  
+    constructor(public languageService: LanguageService) { console.log(languageService); }
+  
+    projects = [
+      {
+        bigTitle: "My Projects",
+        language: 'English',
+        Project: "WebSockets Application",
+        Description: 
+          "This project features a Python WebSocket server integrated with a Machine Learning model to detect humans and cars from live camera feeds or video files. Upon detection, it sends real-time notifications with screenshots to the client interface. Additional functionalities include broadcasting messages, handling image data, and processing object detection results seamlessly.",
+        Technologies: "Python, Yolo, OpenCV, Matplotlib, WebSocket, Javascript",
+        Link: "https://github.com/diaeddine1/WebSocket-Server.git",
+        Image: "../../assets/Prediction4.png" // Add Image property
+      },
+      {
+        Project: "Pharma Plants Application",
+        language: 'English',
+        Description:
+          "A Flutter application that enables users to search for medicinal herbs and plants, explore their health benefits, and discover effective combinations with other herbs for enhanced wellness. The app features an intuitive interface, a detailed herb database, and personalized suggestions for holistic health solutions.",
+        Technologies: "Flutter, Firebase, Image Picker",
+        Link: "https://github.com/diaeddine1/Plants-Project-Flutter",
+        Image: "../../assets/Prediction4.png" // Add Image property
+      },
+      {
+        Project: "Trip Advisor Application",
+        language: 'English',
+        Description: 
+          "This project allows users to search for restaurants in Casablanca scraped from TripAdvisor, mark them as favorites, view their locations on an interactive map, and leave reviews. The platform offers an easy-to-navigate interface for discovering and engaging with local dining options.",
+        Technologies: "Spring Boot, React, Spring Security, Scrapy, Tailwind CSS, Google Maps API",
+        Link: "https://github.com/diaeddine1/Gestion_Restaurant",
+        Image: "../../assets/Prediction4.png" // Add Image property
+      },
+      {
+        bigTitle: "Mes Projects",
+        language: 'French',
+       
+        Project: "Application WebSockets",
+        Description: 
+          "Ce projet présente un serveur WebSocket Python intégré à un modèle de Machine Learning pour détecter les humains et les voitures à partir de flux de caméra en direct ou de fichiers vidéo. Lors de la détection, il envoie des notifications en temps réel avec des captures d'écran à l'interface client. Les fonctionnalités supplémentaires incluent la diffusion de messages, la gestion des données d'image et le traitement des résultats de détection d'objets de manière fluide.",
+        Technologies: "Python, Yolo, OpenCV, Matplotlib, WebSocket, Javascript",
+        Link: "https://github.com/diaeddine1/WebSocket-Server.git",
+        Image: "../../assets/Prediction4.png" // Add Image property
+      },
+      {
+        language: 'French',
+        Project: "Application Pharma Plants",
+       
+        Description:
+          "Une application Flutter qui permet aux utilisateurs de rechercher des herbes médicinales et des plantes, d'explorer leurs bienfaits pour la santé et de découvrir des combinaisons efficaces avec d'autres herbes pour améliorer le bien-être. L'application offre une interface intuitive, une base de données détaillée d'herbes et des suggestions personnalisées pour des solutions de santé holistiques.",
+        Technologies: "Flutter, Firebase, Image Picker",
+        Link: "https://github.com/diaeddine1/Plants-Project-Flutter",
+        Image: "../../assets/Prediction4.png" // Add Image property
+      },
+      {
+        language: 'French',
+        Project: "Application Trip Advisor",
+        
+        Description: 
+          "Ce projet permet aux utilisateurs de rechercher des restaurants à Casablanca extraits de TripAdvisor, de les marquer comme favoris, de voir leurs emplacements sur une carte interactive et de laisser des avis. La plateforme offre une interface facile à naviguer pour découvrir et interagir avec les options de restauration locales.",
+        Technologies: "Spring Boot, React, Spring Security, Scrapy, Tailwind CSS, Google Maps API",
+        Link: "https://github.com/diaeddine1/Gestion_Restaurant",
+        Image: "../../assets/Prediction4.png" // Add Image property
+      }
+    ];
+  
+    selectedProject = this.projects[0];
+  
+    get project() {
+      return this.projects.filter(project => project.language === this.languageService.selectedLanguage);
     }
-  ];
-
-  selectedProject = this.projects[0];
-
-  selectProject(index: number): void {
-    this.selectedProject = this.projects[index];
+  
+    selectProject(index: number): void {
+      this.selectedProject = this.projects[index];
+    }
   }
-}
+  
