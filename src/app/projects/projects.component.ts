@@ -15,7 +15,7 @@ export class ProjectsComponent {
       Description:
       'This project features a Python WebSocket server integrated with a Machine Learning model to detect humans and cars from live camera feeds or video files. Upon detection, it sends real-time notifications with screenshots to the client interface. Additional functionalities include broadcasting messages, handling image data, and processing object detection results seamlessly.',
       Technologies: 'Python, Yolo, OpenCV, Matplotlib, WebSocket, Javascript',
-      Image:'../../assets/Prediction1.png',
+      Image:'../../assets/Prediction4.png',
       Link: 'https://github.com/diaeddine1/WebSocket-Server.git'
     },
     {

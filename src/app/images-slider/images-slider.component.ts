@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, HostListener } from '@angular/core';
 import { CarouselModule } from 'primeng/carousel';
 import { ButtonModule } from 'primeng/button';
 
@@ -68,6 +68,27 @@ export class ImagesSliderComponent {
     },
     
   ]
+
+  numVisible: number = 3; // Default value for larger screens
+
+  // Adjust numVisible based on screen size
+  @HostListener('window:resize', ['$event'])
+  onResize(event: any) {
+    if (window.innerWidth < 768) {
+      this.numVisible = 2;  // Set numVisible to 2 for smaller screens
+    } else {
+      this.numVisible = 3;  // Set numVisible to 3 for larger screens
+    }
+  }
+
+  // Initialize the correct numVisible value on component load
+  ngOnInit() {
+    if (window.innerWidth < 768) {
+      this.numVisible = 2;
+    } else {
+      this.numVisible = 3;
+    }
+  }
   
 
 }

@@ -1,13 +1,37 @@
-#changing{
-
-
-    height: 310px;
-    position: absolute;
-    top:30.5%;
-    left: 49.5%;
-    transform: translate(-50%, -50%);
-    border-radius: 10px;
+.laptop {
+    position: relative; /* Reference for #screen's absolute positioning */
+    max-width: 80%; /* Responsive width for the laptop image */
+    margin: 0 auto; /* Center the container */
 }
+
+.laptop img {
+    width: 100%; /* Make the laptop image responsive */
+    height: auto; /* Maintain aspect ratio */
+}
+
+#screen {
+    position: absolute;
+    top: 3.5%; /* Fine-tuned offset to better match your laptop design */
+    left: 12%; /* Center horizontally */
+    max-height: 320px;   
+    width: 70%;
+    object-fit: cover; /* Shrink content proportionally without cropping */
+   
+    overflow: hidden; /* Prevent overflow from the #screen boundaries */
+    display: flex; /* Ensure the inner image is aligned perfectly */
+    justify-content: center;
+    align-items: center;
+}
+
+#screen img {
+    width: 100%; /* Scale to fit the #screen container */
+    height: 100%; /* Maintain proportional scaling */
+    object-fit: cover; /* Prevent cropping of the image */
+   
+}
+
+
+
 
 #project-name{
     font-family: "kanit", sans-serif;

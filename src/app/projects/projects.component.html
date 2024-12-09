@@ -13,9 +13,12 @@
     }
   </div>
 
-  <div class="relative text-white grid grid-cols-1 place-items-center">
-    <img class="py-10" src="../../assets/laptop.png" />
-    <img id="changing" [src]="selectedProject.Image" class="h-1/2 w-1/2 bg-blue-600" />
+  <div class="relative text-white grid grid-cols-1 place-items-center laptop">
+    <img class="" src="../../assets/laptop.png" />
+    <div id="screen">
+      <img [src]="selectedProject.Image" class="" />
+    </div>
+    
     <h1 class="text-2xl">{{ selectedProject.Project }}</h1>
     <span class="place-self-start">{{ selectedProject.Description }}</span>
     <span class="place-self-start font-bold">{{

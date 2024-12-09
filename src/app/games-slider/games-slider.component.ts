@@ -22,6 +22,10 @@ export class GamesSliderComponent {
     {
       "name":"Volley-Ball",
       "image":"assets/albion.jpg",
+    },
+    {
+      "name":"Dofus",
+      "image":"assets/skin.png",
     }
     
     

@@ -35,9 +35,9 @@
     transition: 0.4s;
   }
   
-  input:checked + .slider {
+  /* input:checked + .slider {
     background: linear-gradient(to right, blue 33%, white 33%, white 66%, red 66%);
-  }
+  } */
   
   input:focus + .slider {
     box-shadow: 0 0 1px #2196F3;
@@ -47,7 +47,7 @@
     transform: translateX(26px);
   }
   
-  /* Rounded sliders */
+
   .slider.round {
     border-radius: 34px;
   }
