@@ -24,7 +24,7 @@ export class GamesSliderComponent {
     },
     {
       name: 'Dofus',
-      image: 'assets/skin.png',
+      image: 'assets/dofus.jpg',
     },
   ];
   numVisible:number=3
