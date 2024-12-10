@@ -42,4 +42,5 @@ testem.log
 Thumbs.db
 
 
-/c:/Users/diaed/Desktop/Portfolio-Profile/src/environments
+/src/environments/
+
