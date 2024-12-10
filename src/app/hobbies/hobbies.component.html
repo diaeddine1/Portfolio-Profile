@@ -1,13 +1,14 @@
 <div class="w-100% h-fit text-center bg-[#1f1f1f] pt-10 pb-20">
-  <h1 class="py-10 text-4xl text-6DAAF2 font-poppins-regular">
-    {{hobbies?.bigTitle}}
+
+  <h1 class="py-10 text-4xl text-6DAAF2 font-poppins-regular first-title">
+    {{ hobbies?.bigTitle }}
   </h1>
 
-  <div class="grid grid-cols-[1.2fr_1fr] gap-4 ">
-    <images-slider class="w-full flex place-items-center"></images-slider>
+  <div class="grid grid-cols-[1.2fr_1fr] gap-4 first-hobby">
+    <images-slider class="w-full flex place-items-center first-slider"></images-slider>
 
-    <div class="text-white ">
-      <h1 class="text-3xl my-10 font-bold">{{hobbies?.title1}}</h1>
+    <div class="text-white first-description">
+      <h1 class="text-3xl my-10 font-bold">{{ hobbies?.title1 }}</h1>
 
       <p class="text-justify text-2xl pr-10">
         {{ hobbies?.manhuas }}
@@ -21,14 +22,13 @@
         Learn more
       </a>
     </div>
+
   </div>
 
-  <div class="grid grid-cols-[1fr_1.158fr] gap-4">
-    
-    <div class="text-white overflow-hidden">
+  <div class="grid grid-cols-[1fr_1.158fr] gap-4 second-hobby">
+    <div class="text-white overflow-hidden second-description">
       <h1 class="text-3xl my-10 font-bold">
-        {{hobbies?.title2}}
-       
+        {{ hobbies?.title2 }}
       </h1>
       <p class="text-justify text-2xl pl-10">
         {{ hobbies?.games }}

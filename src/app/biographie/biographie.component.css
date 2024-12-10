@@ -4,6 +4,19 @@
  
 }
 
+@media (width<1110px){
+  #bio {
+    overflow-wrap: break-word !important;
+    background-image: url(https://bepatrickdavid.com/images/herobg-hd.jpg);
+    background-size: cover; /* Ensures the image covers the container */
+    background-position: center; /* Keeps the focal point centered */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+    min-height: 100vh; /* Optional: Ensures the section is at least the height of the viewport */
+  }
+  
+}
+
+
 .navbar-scrolled{
   background-color: #1f1f1f;
 

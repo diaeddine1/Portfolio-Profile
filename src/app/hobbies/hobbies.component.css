@@ -1,0 +1,34 @@
+@media (width<768px){
+    .first-title{
+        font-size: 3rem;
+    }
+
+    .first-hobby,.second-hobby{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-areas: "firstRow,secondRow";
+        place-items: center;
+       
+        
+    }
+    .first-hobby p,.second-hobby p{
+        text-align: center;
+        margin: 0;
+        padding: 25px;
+    }
+    .first-slider{
+        grid-area: 2/1;
+    }
+    .first-description{
+        grid-area: 1/1;
+    }
+    .first-description h1{
+        font-size: 1.3rem;
+        padding: 4px;
+    }
+    .second-description h1{
+        font-size: 1.3rem;
+        padding: 4px;
+    }
+
+}

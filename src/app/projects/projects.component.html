@@ -2,9 +2,14 @@
   {{ filteredProjects?.bigTitle }}
 </h1>
 
-<div class="grid grid-cols-2 min-h-fit h-eightyfire place-items-center bg-[#1f1f1f]">
+<div
+  class="grid grid-cols-2 min-h-fit h-eightyfire place-items-center bg-[#1f1f1f]"
+>
   <div class="col-span-1">
-    <div *ngFor="let project of filteredProjects?.Projects; let i = index" class="project-item">
+    <div
+      *ngFor="let project of filteredProjects?.Projects; let i = index"
+      class="project-item"
+    >
       <h1
         class="text-transparent text-5xl hover:text-blue-500 box-border cursor-pointer"
         id="project-name"
@@ -22,7 +27,9 @@
     </div>
     <h1 class="text-2xl">{{ selectedProject.Project }}</h1>
     <span class="place-self-start">{{ selectedProject.Description }}</span>
-    <span class="place-self-start font-bold">{{ selectedProject.Technologies }}</span>
+    <span class="place-self-start font-bold">{{
+      selectedProject.Technologies
+    }}</span>
     <a
       [href]="selectedProject.Link"
       target="_blank"
