@@ -6,37 +6,39 @@
   >
     <li>
       <a class="hover:cursor-pointer" (click)="navigateTo('Biographie')"
-        >About Me</a
+        >
+        {{ navbar.nb1 }}
+        </a
       >
     </li>
 
     <li>
       <a class="hover:cursor-pointer" (click)="navigateTo('Milestones')"
-        >Milestones</a
+        > {{ navbar.nb2 }}</a
       >
     </li>
 
     <li>
       <a class="hover:cursor-pointer" (click)="navigateTo('Experience')"
-        >Experience</a
+        > {{ navbar.nb3 }}</a
       >
     </li>
 
     <li>
       <a class="hover:cursor-pointer" (click)="navigateTo('Projects')">
-        Projects
+        {{ navbar.nb4 }}
       </a>
     </li>
 
     <li>
       <a class="hover:cursor-pointer" (click)="navigateTo('hobbies')"
-        >Hobbies</a
+        > {{ navbar.nb5 }}</a
       >
     </li>
 
     <li>
       <a class="hover:cursor-pointer" (click)="navigateTo('socials')"
-        >Socials</a
+        > {{ navbar.nb6 }}</a
       >
     </li>
 

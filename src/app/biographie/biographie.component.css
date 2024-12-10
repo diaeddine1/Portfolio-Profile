@@ -1,6 +1,7 @@
 #bio{
-  overflow-wrap: break-word !important;
+  
   background-image: url(https://bepatrickdavid.com/images/herobg-hd.jpg);
+ 
 }
 
 .navbar-scrolled{
@@ -32,20 +33,20 @@ p>a {
   padding: 0.1em;
 }
 
-@media screen and (max-width: 990px) {
+/* @media screen and (max-width: 990px) {
   #bio{
     justify-content: start;
   }
   #disappear {
-    opacity: 0; /* Fade out the image */
-    visibility: hidden; /* Ensures it won't take up space */
-    transition: opacity 0.3s, visibility 0.3s; /* Smooth transition for fading and hiding */
+    opacity: 0; 
+    visibility: hidden;
+    transition: opacity 0.3s, visibility 0.3s; 
   }
 
   #shift-left {
-    width: 100vw; /* Make the text container take the full width of the screen */
+    width: 100vw; 
     transform: translateX(-100px);
-    transition: width 0.3s; /* Smooth transition for the width change */
+    transition: width 0.3s; 
   }
-}
+} */
 

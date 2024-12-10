@@ -14,8 +14,30 @@ export class BiographieComponent implements OnInit {
   @Output() scrollToId = new EventEmitter<string>();
 
  
-
+  
   constructor(public languageService: LanguageService) {}
+  Navbar={
+    English :{
+      nb1:"About Me",
+      nb2:"Milestones",
+      nb3:"Experience",
+      nb4:"Projects",
+      nb5:"Hobbies",
+      nb6:"Contact Me",
+
+    },
+    French: {
+      "nb1": "Introduction",
+      "nb2": "Parcours",
+      "nb3": "Expérience",
+      "nb4": "Projets",
+      "nb5": "Loisirs",
+      "nb6": "Contactez-moi"
+    }
+  }
+  get navbar(){
+    return this.Navbar[this.languageService.selectedLanguage];
+  }
 
   Biographie = {
     English: {
@@ -29,7 +51,7 @@ export class BiographieComponent implements OnInit {
     },
     French: {
       welcome : "Salut,",
-      name:"Je suis Dia Eddine Aberane,",
+      name:"Je Suis Dia Eddine Aberane,",
       intro: `Je suis un ingénieur logiciel passionné 
               avec une solide expérience dans le développement d'applications évolutives et efficaces.`,
       specialization: `Je me spécialise dans le développement full-stack, avec une expertise dans les technologies liées à JAVA et JAVASCRIPT.`,
@@ -37,6 +59,8 @@ export class BiographieComponent implements OnInit {
               une compréhension approfondie des techniques avancées du machine/deep learning.`,
     },
   };
+
+  
 
   get displayedBio() {
     return this.Biographie[this.languageService.selectedLanguage];

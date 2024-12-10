@@ -2,12 +2,12 @@
  
     <p-carousel
       [value]="hobby"
-      [numVisible]="3"
-      [numScroll]="3"
+      [numVisible]="numVisible"
+      [numScroll]="numScroll"
       [circular]="true"
       class="w-11/12"
     >
-      <ng-template let-hobby pTemplate="item" class="bg-red-700">
+      <ng-template let-hobby pTemplate="item" class="">
         
         <div class="h-full">
           
@@ -16,7 +16,7 @@
               <img
                 [src]="hobby.image"
                 [alt]="hobby.name"
-                class="w-11/12"
+                class="w-11/12 object-scale-down"
               />
               <!-- <span class="h-96">{{group.name}}</span> -->
           </div>
