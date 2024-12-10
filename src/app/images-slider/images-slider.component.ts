@@ -80,24 +80,39 @@ export class ImagesSliderComponent {
     
   ]
 
-  numVisible: number = 3; // Default value for larger screens
+  numVisible: number = 3; 
+  numScroll:number = 3
 
-  // Adjust numVisible based on screen size
+ 
   @HostListener('window:resize', ['$event'])
   onResize(event: any) {
-    if (window.innerWidth < 768) {
-      this.numVisible = 2;  // Set numVisible to 2 for smaller screens
+    if(window.innerWidth>1000){
+      this.numVisible = 3
+      this.numScroll = 3
+    }
+    
+    else if (window.innerWidth < 1000 && window.innerWidth>768) {
+      this.numVisible = 2;
+      this.numScroll = 2
     } else {
-      this.numVisible = 3;  // Set numVisible to 3 for larger screens
+      this.numVisible = 1;  
+      this.numScroll = 1;
     }
   }
 
   // Initialize the correct numVisible value on component load
   ngOnInit() {
-    if (window.innerWidth < 768) {
+    if(window.innerWidth>1000){
+      this.numVisible = 3
+      this.numScroll = 3
+    }
+    
+    else if (window.innerWidth < 1000 && window.innerWidth>768) {
       this.numVisible = 2;
+      this.numScroll = 2
     } else {
-      this.numVisible = 3;
+      this.numVisible = 1;  
+      this.numScroll = 1;
     }
   }
   
