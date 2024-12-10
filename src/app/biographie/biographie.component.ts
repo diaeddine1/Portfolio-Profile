@@ -51,7 +51,7 @@ export class BiographieComponent implements OnInit {
     },
     French: {
       welcome : "Salut,",
-      name:"Je suis Dia Eddine Aberane,",
+      name:"Je Suis Dia Eddine Aberane,",
       intro: `Je suis un ingénieur logiciel passionné 
               avec une solide expérience dans le développement d'applications évolutives et efficaces.`,
       specialization: `Je me spécialise dans le développement full-stack, avec une expertise dans les technologies liées à JAVA et JAVASCRIPT.`,
