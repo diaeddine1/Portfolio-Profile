@@ -14,8 +14,30 @@ export class BiographieComponent implements OnInit {
   @Output() scrollToId = new EventEmitter<string>();
 
  
-
+  
   constructor(public languageService: LanguageService) {}
+  Navbar={
+    English :{
+      nb1:"About Me",
+      nb2:"Milestones",
+      nb3:"Experience",
+      nb4:"Projects",
+      nb5:"Hobbies",
+      nb6:"Contact Me",
+
+    },
+    French: {
+      "nb1": "Introduction",
+      "nb2": "Parcours",
+      "nb3": "Expérience",
+      "nb4": "Projets",
+      "nb5": "Loisirs",
+      "nb6": "Contactez-moi"
+    }
+  }
+  get navbar(){
+    return this.Navbar[this.languageService.selectedLanguage];
+  }
 
   Biographie = {
     English: {
@@ -37,6 +59,8 @@ export class BiographieComponent implements OnInit {
               une compréhension approfondie des techniques avancées du machine/deep learning.`,
     },
   };
+
+  
 
   get displayedBio() {
     return this.Biographie[this.languageService.selectedLanguage];
