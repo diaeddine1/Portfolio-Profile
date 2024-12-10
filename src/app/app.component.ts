@@ -13,6 +13,7 @@ import * as THREE from 'three';
 import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 import { LaptopComponent } from './laptop/laptop.component';
+import { MailComponent } from './mail/mail.component';
 
 @Component({
   selector: 'app-root',
@@ -27,7 +28,8 @@ import { LaptopComponent } from './laptop/laptop.component';
     StudiesComponent,
     ExperienceComponent,
     SocialsComponent,
-    LaptopComponent
+    LaptopComponent,
+    MailComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
