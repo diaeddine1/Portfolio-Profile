@@ -35,17 +35,32 @@
     .big-container{
         display: grid;
         grid-template-columns: 100%;
+        height: fit-content;
     }
-    #project-name{
-        width:2rem ;
-    }
+    
 
     .projects-container{
         width: 100%;
+        place-items: center;
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 30px;
     }
-    .project-name{
+
+    #project-name{
+        font-size:1.6rem ;
+    }
+    .project-item{
         text-align: center;
-        background-color: wheat !important;
+        width: 100%;
+        
+    }
+    .projects-description{
+        text-align: justify;
+    }
+    .laptop h1{
+        font-size: 2rem;
+        text-align: center;
     }
 }
 
