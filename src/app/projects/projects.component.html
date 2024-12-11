@@ -1,11 +1,11 @@
-<h1 class="bg-[#1f1f1f] text-6DAAF2 text-center text-4xl">
+<h1 class="bg-[#1f1f1f] text-6DAAF2 text-center text-4xl bigtitle">
   {{ filteredProjects?.bigTitle }}
 </h1>
 
 <div
-  class="grid grid-cols-2 min-h-fit h-eightyfire place-items-center bg-[#1f1f1f]"
+  class="grid grid-cols-2 min-h-fit h-eightyfire place-items-center bg-[#1f1f1f] big-container"
 >
-  <div class="col-span-1">
+  <div class="col-span-1 projects-container">
     <div
       *ngFor="let project of filteredProjects?.Projects; let i = index"
       class="project-item"
