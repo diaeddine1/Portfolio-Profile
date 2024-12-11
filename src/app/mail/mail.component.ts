@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component ,OnInit} from '@angular/core';
 import emailjs, { type EmailJSResponseStatus } from '@emailjs/browser';
 import { environment } from '../../environments/environment';
 @Component({
@@ -10,12 +10,23 @@ import { environment } from '../../environments/environment';
 })
 export class MailComponent {
 
+  SERVICE_ID = environment.YOUR_SERVICE_ID
+  TEMPLATE_ID = environment.YOUR_TEMPLATE_ID
+  PUBLIC_KEY = environment.YOUR_PUBLIC_KEY
+  
+  ngOnInit(): void {
+    console.log(this.SERVICE_ID)
+    console.log(this.TEMPLATE_ID)
+    console.log(this.PUBLIC_KEY)
+  }
   public sendEmail(e: Event) {
     e.preventDefault();
 
+    console.log(this.TEMPLATE_ID)
+
     emailjs
-      .sendForm(environment.YOUR_SERVICE_ID, environment.YOUR_TEMPLATE_ID, e.target as HTMLFormElement, {
-        publicKey: environment.YOUR_PUBLIC_KEY,
+      .sendForm(this.SERVICE_ID!, this.TEMPLATE_ID!, e.target as HTMLFormElement, {
+        publicKey: this.PUBLIC_KEY,
       })
       .then(
         () => {
