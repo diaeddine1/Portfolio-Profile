@@ -50,13 +50,13 @@ export class BiographieComponent implements OnInit {
 
   Biographie = {
     English: {
-      welcome: 'Hi,',
+      welcome: 'Hello,',
       name: `I\'m Dia Eddine Aberane,`,
       intro: `I am a passionate Software Engineer 
               with a strong background in developing scalable and efficient applications.`,
       specialization: `I specialize in full-stack development, with expertise in technologies related to JAVA & JAVASCRIPT.`,
       degree: `I also hold a Master's degree in Artificial Intelligence, where I gained 
-              deep insights into advanced machine/deep learning techniques.`,
+              deep insights into advanced machine/deep learning techniques and Computer Vision.`,
     },
     French: {
       welcome: 'Salut,',
@@ -65,7 +65,7 @@ export class BiographieComponent implements OnInit {
               avec une solide expérience dans le développement d'applications évolutives et efficaces.`,
       specialization: `Je me spécialise dans le développement full-stack, avec une expertise dans les technologies liées à JAVA et JAVASCRIPT.`,
       degree: `Je suis également titulaire d'un Master en Intelligence Artificielle, où j'ai acquis 
-              une compréhension approfondie des techniques avancées du machine/deep learning.`,
+              une compréhension approfondie des techniques avancées du machine/deep learning et le Computer Vision.`,
     },
   };
 

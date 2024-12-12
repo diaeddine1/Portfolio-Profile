@@ -1,76 +1,105 @@
-#bio {
-  background-image: url(https://bepatrickdavid.com/images/herobg-hd.jpg);
-  background-position: center;
-  background-repeat: no-repeat;
+/* Main form container */
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem;
 }
 
-.hamburger {
-  display: none;
+/* Style for individual form fields */
+.form-group {
+  width: 100%;
+  margin-bottom: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
-@media (max-width: 860px) {
-  #nav-bar {
-    flex-direction: column;
-    background-color: #1f1f1f;
-    height: fit-content;
-    padding: 20px;
-  }
-  
-  .hamburger {
-    display: block;
-    position: absolute;
-    background-color: transparent;
-  }
-  
-  #nav-bar li {
-    text-align: start;
-  }
+label {
+  font-size: 1.125rem;
+  font-weight: 500;
 }
 
+
+
+.textarea-field {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* Submit button styling */
+.submit-button {
+  background-color: #6DAAF2;
+  color: white;
+  padding: 0.75rem 2rem;
+  font-size: 1.125rem;
+  font-weight: 600;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.submit-button:hover {
+  background-color: #4c9cdc;
+}
+
+/* Responsive Styles */
 @media (max-width: 768px) {
-  #bio {
-    background-size: cover;
-    flex-direction: column;
-    place-items: center;
-    gap: 0;
+  .contact-form {
+    padding: 2rem;
   }
+
+  .form-group {
+    margin-bottom: 1rem;
+  }
+
+  .submit-button {
+    padding: 1rem 2rem;
+    font-size: 1rem;
+  }
+}
+textarea:focus::placeholder,input:focus::placeholder{
+  color :transparent;
   
-  .first-div {
-    padding-left: 20px;
-    padding-top: 30%;
-    width: 100%;
-  }
-
-  .first-div * {
-    font-size: 2rem;
-  }
-
-  .second-div {
-    padding-right: 20px;
-    margin-top: 60px;
-  }
+  
 }
 
-.navbar-scrolled {
-  background-color: #1f1f1f;
+
+.input-field {
+  background-color: transparent;
+  border: 2px solid #6DAAF2;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  color: white;
+  border-radius: 0.5rem;
+  transition: all 0.3s ease;
 }
 
-.blink {
-  animation: blink 0.5s infinite;
+.input-field:focus {
+  outline: none;
+  border-color: #4c9cdc;
+  box-shadow: 0 0 5px rgba(108, 170, 242, 0.7);
 }
 
-@keyframes blink {
-  to { opacity: 0; }
+/* input:not(:placeholder-shown):invalid{
+ 
+  outline: 3px solid red;
+
+} */
+input[type="text"]:not(:placeholder-shown):valid{
+  border: 0px;
+  outline: 3px solid rgb(0, 128, 0);
+  box-shadow: 0 0 5px rgba(0, 128, 0, 0.7);
 }
 
-.nav-item {
-  display: block;
+input[type="email"]:user-invalid{
+  border: none;
+  outline: 3px solid red;
+  box-shadow: 0 0 5px rgba(255, 0, 0, 0.7);
 }
+/* input:valid{
+ 
+  outline: 3px solid green;
 
-.hidden {
-  display: none;
-}
+} */
 
-.bg-none {
-  background-color: transparent !important;
-}
