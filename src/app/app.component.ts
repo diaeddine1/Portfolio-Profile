@@ -14,6 +14,7 @@ import { GLTFLoader } from 'three/addons/loaders/GLTFLoader.js';
 import { DRACOLoader } from 'three/examples/jsm/loaders/DRACOLoader.js';
 import { LaptopComponent } from './laptop/laptop.component';
 import { MailComponent } from './mail/mail.component';
+import { SkillsComponent } from './skills/skills.component';
 
 @Component({
   selector: 'app-root',
@@ -29,7 +30,8 @@ import { MailComponent } from './mail/mail.component';
     ExperienceComponent,
     SocialsComponent,
     LaptopComponent,
-    MailComponent
+    MailComponent,
+    SkillsComponent
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css',
@@ -40,9 +42,19 @@ import { MailComponent } from './mail/mail.component';
 export class AppComponent  {
  
   scrollToId(Id: string): void {
-    const href = document.getElementById(Id);
-    if (href) {
-      href.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    const element = document.getElementById(Id);
+  
+    if (element) {
+      if (Id === "Milestones") {
+        console.log("milestones");
+        const yOffset = 0; // Offset by 30 pixels for Milestones
+        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      } else {
+        const yOffset = -80; // Offset by -80 pixels for other elements
+        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({ top: y, behavior: 'smooth' });
+      }
     }
   }
 }

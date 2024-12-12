@@ -1,74 +1,76 @@
-/* Main form container */
-.contact-form {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 1rem;
+#bio {
+  background-image: url(https://bepatrickdavid.com/images/herobg-hd.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
-/* Style for individual form fields */
-.form-group {
-  width: 100%;
-  margin-bottom: 1.5rem;
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
+.hamburger {
+  display: none;
 }
 
-label {
-  font-size: 1.125rem;
-  font-weight: 500;
+@media (max-width: 860px) {
+  #nav-bar {
+    flex-direction: column;
+    background-color: #1f1f1f;
+    height: fit-content;
+    padding: 20px;
+  }
+  
+  .hamburger {
+    display: block;
+    position: absolute;
+    background-color: transparent;
+  }
+  
+  #nav-bar li {
+    text-align: start;
+  }
 }
 
-.input-field {
-  background-color: transparent;
-  border: 2px solid #6DAAF2;
-  padding: 0.75rem 1rem;
-  font-size: 1rem;
-  color: white;
-  border-radius: 0.5rem;
-  transition: all 0.3s ease;
-}
-
-.input-field:focus {
-  outline: none;
-  border-color: #4c9cdc;
-  box-shadow: 0 0 5px rgba(108, 170, 242, 0.7);
-}
-
-.textarea-field {
-  resize: vertical;
-  min-height: 150px;
-}
-
-/* Submit button styling */
-.submit-button {
-  background-color: #6DAAF2;
-  color: white;
-  padding: 0.75rem 2rem;
-  font-size: 1.125rem;
-  font-weight: 600;
-  border-radius: 0.5rem;
-  cursor: pointer;
-  border: none;
-  transition: background-color 0.3s ease;
-}
-
-.submit-button:hover {
-  background-color: #4c9cdc;
-}
-
-/* Responsive Styles */
 @media (max-width: 768px) {
-  .contact-form {
-    padding: 2rem;
+  #bio {
+    background-size: cover;
+    flex-direction: column;
+    place-items: center;
+    gap: 0;
+  }
+  
+  .first-div {
+    padding-left: 20px;
+    padding-top: 30%;
+    width: 100%;
   }
 
-  .form-group {
-    margin-bottom: 1rem;
+  .first-div * {
+    font-size: 2rem;
   }
 
-  .submit-button {
-    padding: 1rem 2rem;
-    font-size: 1rem;
+  .second-div {
+    padding-right: 20px;
+    margin-top: 60px;
   }
+}
+
+.navbar-scrolled {
+  background-color: #1f1f1f;
+}
+
+.blink {
+  animation: blink 0.5s infinite;
+}
+
+@keyframes blink {
+  to { opacity: 0; }
+}
+
+.nav-item {
+  display: block;
+}
+
+.hidden {
+  display: none;
+}
+
+.bg-none {
+  background-color: transparent !important;
 }

@@ -4,7 +4,36 @@
   background-position: center; /* Keeps the focal point centered */
   background-repeat: no-repeat; /* Prevents the image from repeating */
 }
+.hamburger{
+  display: none;
+  background-color: transparent !important;
 
+}
+@media (width<860px) {
+    #nav-bar{
+      flex-direction: column;
+      height: fit-content;
+      padding: 20px;
+      
+    }
+    
+    #nav-bar>*:not(.hamburger){
+      display: none;
+
+    }
+  
+    .hamburger{
+      display: initial;
+      position: absolute;
+      background-color: transparent !important;
+    }
+  
+    
+    
+    #nav-bar li{
+        text-align: start;
+    }
+}
 @media (width<768px){
   #bio {
     background-size: cover;
@@ -13,9 +42,10 @@
     gap: 0;
   }
   #bio ul{
-    font-size: 0.6rem;
-    display: none;
+    /* font-size: 0.6rem; */
+    /* display: none; */
   }
+  
   .first-div{
  
     padding-left: 20px;
@@ -47,3 +77,13 @@
 }
 
 
+.nav-item { 
+  display: unset; 
+} 
+.hidden { 
+  display: unset !important; 
+}
+
+.bg-none {
+  background-color: #1f1f1f !important;
+}

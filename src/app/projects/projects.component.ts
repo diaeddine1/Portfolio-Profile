@@ -17,7 +17,7 @@ export class ProjectsComponent {
 
   projects = [
     {
-      bigTitle: 'My Projects',
+      bigTitle: 'Some of My Projects',
       language: 'English',
       Projects: [
         {
@@ -52,7 +52,7 @@ export class ProjectsComponent {
     },
 
     {
-      bigTitle: 'Mes Projects',
+      bigTitle: 'Quelques Projets',
       language: 'French',
       Projects: [
         {

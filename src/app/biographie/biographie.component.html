@@ -1,46 +1,56 @@
 <div id="bio" class="min-h-svh h-fit flex flex-row place-items-center">
+  
   <ul
     id="nav-bar"
-    class="flex justify-around items-center w-100% h-20 text-white text-2xl fixed top-0 right-0 left-0 z-10 mb-10"
+    class="flex justify-around items-center w-100% h-20 text-white text-xl fixed top-0 right-0 left-0 z-10 mb-10"
+    [class.bg-none]="isBgNone"
     (scroll)="onWindowScroll()"
   >
-    <li>
+  <li class="hamburger" (click)="toggleNavbar()"><img class="fixed top-1 right-0 left-2 z-10 w-10 h-10  hover:cursor-pointer" src="../../assets/hamburger.svg"/></li>
+    <li class="hover:text-6DAAF2" [class.hidden]="navItemsVisible">
       <a class="hover:cursor-pointer" (click)="navigateTo('Biographie')">
         {{ navbar.nb1 }}
       </a>
     </li>
 
-    <li>
+    <li class="hover:text-6DAAF2 " [class.hidden]="navItemsVisible">
       <a class="hover:cursor-pointer" (click)="navigateTo('Milestones')">
         {{ navbar.nb2 }}</a
       >
     </li>
 
-    <li>
+    <li class="hover:text-6DAAF2" [class.hidden]="navItemsVisible">
       <a class="hover:cursor-pointer" (click)="navigateTo('Experience')">
         {{ navbar.nb3 }}</a
       >
     </li>
 
-    <li>
-      <a class="hover:cursor-pointer" (click)="navigateTo('Projects')">
-        {{ navbar.nb4 }}
-      </a>
-    </li>
-
-    <li>
-      <a class="hover:cursor-pointer" (click)="navigateTo('hobbies')">
-        {{ navbar.nb5 }}</a
+    <li class="hover:text-6DAAF2" [class.hidden]="navItemsVisible">
+      <a class="hover:cursor-pointer" (click)="navigateTo('Skills')">
+        {{ navbar.nb4 }}</a
       >
     </li>
 
-    <li>
-      <a class="hover:cursor-pointer" (click)="navigateTo('socials')">
+
+    <li class="hover:text-6DAAF2" [class.hidden]="navItemsVisible">
+      <a class="hover:cursor-pointer" (click)="navigateTo('Projects')">
+        {{ navbar.nb5 }}
+      </a>
+    </li>
+    
+    <li class="hover:text-6DAAF2" [class.hidden]="navItemsVisible">
+      <a class="hover:cursor-pointer" (click)="navigateTo('hobbies')">
         {{ navbar.nb6 }}</a
       >
     </li>
 
-    <language-toggle></language-toggle>
+    <li class="hover:text-6DAAF2" [class.hidden]="navItemsVisible">
+      <a class="hover:cursor-pointer" (click)="navigateTo('socials')">
+        {{ navbar.nb7 }}</a
+      >
+    </li>
+
+    <language-toggle [class.hidden]="navItemsVisible"></language-toggle>
   </ul>
   <!-- <div id="disappear" class="flex justify-center hover:[transform:rotateY(180deg)] duration-100 w-1/4  ">
         <hovered-image></hovered-image>
