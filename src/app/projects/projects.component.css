@@ -12,11 +12,10 @@
 #screen {
     position: absolute;
     top: 3.5%; /* Fine-tuned offset to better match your laptop design */
-    left: 12%; /* Center horizontally */
+    left: 15%; /* Center horizontally */
     max-height: 320px;   
     width: 70%;
     object-fit: cover; /* Shrink content proportionally without cropping */
-   
     overflow: hidden; /* Prevent overflow from the #screen boundaries */
     display: flex; /* Ensure the inner image is aligned perfectly */
     justify-content: center;
@@ -31,14 +30,13 @@
 }
 
 @media(width<768px){
-    
+   
     .big-container{
         display: grid;
         grid-template-columns: 100%;
         height: fit-content;
     }
     
-
     .projects-container{
         width: 100%;
         place-items: center;
@@ -46,14 +44,12 @@
         flex-direction: column;
         padding-bottom: 30px;
     }
-
     #project-name{
         font-size:1.6rem ;
     }
     .project-item{
         text-align: center;
         width: 100%;
-        
     }
     .projects-description{
         text-align: justify;
@@ -62,9 +58,29 @@
         font-size: 2rem;
         text-align: center;
     }
+
+    #screen{
+        top: 2% !important;
+        left: 16%;
+        
+    }
 }
 
-
+@media (width<1120px){
+    #screen{
+        top: 1%;
+        left: 16%;
+        
+    }
+}
+@media (width< 520px){
+    #screen{
+        top: 1% !important;
+        left: 16%;
+        
+    }
+   
+}
 
 
 #project-name{
