@@ -41,10 +41,7 @@
     place-items: center;
     gap: 0;
   }
-  #bio ul{
-    /* font-size: 0.6rem; */
-    /* display: none; */
-  }
+
   
   .first-div{
  
@@ -61,6 +58,9 @@
     padding-right: 20px;
     margin-top: 60px;
    
+  }
+  .second-div *{
+    font-size: 1.3rem;
   }
   
 }

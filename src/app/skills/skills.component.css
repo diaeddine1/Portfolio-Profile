@@ -16,5 +16,7 @@
         margin: 0;
         width: 100%;
     }
-    
+    .skills-description{
+        font-size: 1.3rem;
+    }
 }
