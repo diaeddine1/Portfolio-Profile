@@ -1,6 +1,6 @@
 @media (width<768px){
     .first-title{
-        font-size: 3rem;
+        font-size: 2.4rem;
     }
 
     .first-hobby,.second-hobby{
@@ -31,8 +31,5 @@
         font-size: 1.3rem;
         padding: 4px;
     }
-    .manhuas-description{
-        
-    }
-
+    
 }
