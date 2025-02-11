@@ -26,7 +26,7 @@ export class ExperienceComponent {
       exp: [
         { year: "MARCH - JULY 2024", title: 'End Of Studies Internship', description: 'Creation of a decision automation platform based on a machine learning model, intended to replace IBM ODM Decision Center, and to be hosted on AWS Cloud.' },
         { year: "JULY - SEPTEMBER 2023", title: 'Summer Internship in Web Development', description: ' Design and development of a robust cryptocurrency platform that empowers users with real-time access to cryptocurrency data, enabling them to buy, exchange, and sell digital assets with other users.' },
-        { year: " AUGUST - SEPTEMBER 2022", title: 'Intégration à l\'École Marocaine des Sciences de l\'Ingénieur', description: ' Design and creation of a dynamic website facilitating company registration and advertising services and information to users.' },
+        { year: " AUGUST - SEPTEMBER 2022", title: 'Summer Internship in Web Development', description: ' Design and creation of a dynamic website facilitating company registration and advertising services and information to users.' },
        
       ]
     }
