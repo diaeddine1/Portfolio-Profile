@@ -36,7 +36,7 @@ export class ProjectsComponent {
             'A Flutter application that enables users to search for medicinal herbs and plants, explore their health benefits, and discover effective combinations with other herbs for enhanced wellness. The app features an intuitive interface, a detailed herb database, and personalized suggestions for holistic health solutions.',
           Technologies: 'Flutter, Firebase, Image Picker',
           Link: 'https://github.com/diaeddine1/Plants-Project-Flutter',
-          Image: '../../assets/Prediction4.png', // Add Image property
+          Image: '../../assets/Iplant.png', // Add Image property
         },
         {
           Project: 'Trip Advisor Application',
