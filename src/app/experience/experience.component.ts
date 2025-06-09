@@ -16,8 +16,8 @@ export class ExperienceComponent {
     {
       language: 'French',
       exp: [
-        { year: "AOUT 2024 - MAI 2025", title: ' Data Scientist', description: 'Développé des modèles prédictifs pour optimiser les ventes, la planification des repas et réduire le gaspillage alimentaire de plus de 3 tonnes/mois dans les restaurants et buffets.' },
-        { year: "MARS - JUILLET 2024", title: ' Stage de Fin d\'étude', description: 'Création d\'une plateforme d\'automatisation des décisions reposant sur un modèle de machine learning, destinée à remplacer IBM ODM Decision Center, et à être hébergée sur AWS Cloud.' },
+        { year: "AOUT 2024 - MAI 2025", title: 'Data Scientist', description: 'Développé des modèles prédictifs pour optimiser les ventes, la planification des repas et réduire le gaspillage alimentaire de plus de 3 tonnes/mois dans les restaurants et buffets.' },
+        { year: "MARS - JUILLET 2024", title: 'Stage de Fin d\'étude', description: 'Création d\'une plateforme d\'automatisation des décisions reposant sur un modèle de machine learning, destinée à remplacer IBM ODM Decision Center, et à être hébergée sur AWS Cloud.' },
         { year: "JUILLET - SEPTEMBRE 2023", title: 'Stage d\'été en Développement Web', description: ' Conception et développement d\'une plateforme de cryptomonnaie permettant aux utilisateurs d\'accéder en temps réel aux données sur les cryptomonnaies, leur offrant la possibilité d\'acheter, d\'échanger et de vendre des actifs numériques avec d\'autres utilisateurs.' },
         { year: "AOUT - SEPTEMBRE 2022", title: 'Stage d\'été en Développement Web', description: 'Conception et développement d\'un site web dynamique facilitant l\'enregistrement des entreprises et proposant des services publicitaires ainsi que des informations aux utilisateurs.' },
       ]

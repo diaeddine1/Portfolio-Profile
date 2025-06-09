@@ -27,7 +27,7 @@ export class ProjectsComponent {
           Technologies:
             'Python, Yolo, OpenCV, Matplotlib, WebSocket, Javascript',
           Link: 'https://github.com/diaeddine1/WebSocket-Server.git',
-          Image: '../../assets/Prediction5.png',
+          Image: '../../assets/Prediction6.png',
         },
         {
           Project: 'Pharma Plants Application',
@@ -46,7 +46,7 @@ export class ProjectsComponent {
           Technologies:
             'Spring Boot, React, Spring Security, Scrapy, Tailwind CSS, Google Maps API',
           Link: 'https://github.com/diaeddine1/Gestion_Restaurant',
-          Image: '../../assets/Prediction4.png', // Add Image property
+          Image: '../../assets/trip advisor.png', // Add Image property
         },
       ],
     },

@@ -1,5 +1,5 @@
 <h1 class="bg-[#1f1f1f] text-[#6DAAF2] text-4xl text-center p-5 ">Contact Me !</h1>
-<div class="w-full bg-[#1f1f1f] pb-20">
+<div class="w-full bg-[#1f1f1f] pb-20 relative">
     <form
   class="contact-form w-full text-white flex flex-col  justify-center items-center p-5"
   (submit)="sendEmail($event)"
@@ -21,5 +21,14 @@
 
   <input type="submit" value="Send" class="submit-button" />
 </form>
+
+
+<div id="alert">
+    <span id ="email">Attempting to Send Email ...</span>
+    <svg id="close" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+      <path d="M 7.71875 6.28125 L 6.28125 7.71875 L 23.5625 25 L 6.28125 42.28125 L 7.71875 43.71875 L 25 26.4375 L 42.28125 43.71875 L 43.71875 42.28125 L 26.4375 25 L 43.71875 7.71875 L 42.28125 6.28125 L 25 23.5625 Z"></path>
+    </svg>
+    
+</div>
 
 </div>

@@ -103,3 +103,83 @@ input[type="email"]:user-invalid{
 
 } */
 
+  @media screen and (width <800px) {
+   #alert{
+    display: none;
+   }
+  
+  }
+
+#alert{
+  color: white;
+  min-width: fit-content;
+  width: 280px;
+  background-color: #0ba118;
+  position: absolute;
+  bottom: 10%;
+  left: 0%;
+  padding: 10px;
+  border-radius: 5px;
+  opacity: 0;
+  display: none;
+}
+
+#email{
+  width: 300px;
+  padding: 10px;
+  font-size: 20px;
+  font-family: 'Arial', sans-serif;
+}
+#close{
+
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  top: 5%;
+  right: 0.5%;
+  
+}
+
+#close:hover{
+  cursor: pointer;
+}
+
+
+#alert.show{
+  display: block;
+  opacity: 1;
+  animation: fadein 1s forwards;
+}
+
+@keyframes fadein{
+  from {
+    opacity : 0;
+
+  }
+  to {
+    opacity: 1; 
+  }
+}
+
+@keyframes redslide{
+
+  from {
+    left : var(--current-left);
+
+  }
+  to {
+    left : 0%
+  }
+
+}
+
+@keyframes fadeback{
+
+  from {
+     opacity: 1; 
+  }
+  to {
+    opacity : 0;
+
+  }
+}
