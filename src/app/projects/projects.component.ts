@@ -27,7 +27,7 @@ export class ProjectsComponent {
           Technologies:
             'Python, Yolo, OpenCV, Matplotlib, WebSocket, Javascript',
           Link: 'https://github.com/diaeddine1/WebSocket-Server.git',
-          Image: '../../assets/Prediction4.png',
+          Image: '../../assets/Prediction5.png',
         },
         {
           Project: 'Pharma Plants Application',

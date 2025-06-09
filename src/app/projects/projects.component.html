@@ -21,10 +21,10 @@
   </div>
 
   <div class="relative text-white grid grid-cols-1 place-items-center laptop">
-    <img  src="../../assets/laptop.png" />
-    <div id="screen" class="py-2">
-      <img [src]="selectedProject.Image" />
-    </div>
+    <img [src]="selectedProject.Image" />
+    <!-- <div id="screen" class="py-2">
+      
+    </div> -->
 
     <h1 class="text-3xl py-5 text-center">{{ selectedProject.Project }}</h1>
     <span class="place-self-start projects-description min-h-36">{{ selectedProject.Description }}</span>
