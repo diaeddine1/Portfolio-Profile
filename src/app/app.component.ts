@@ -1,5 +1,5 @@
 import { Component, ElementRef, AfterViewInit, ViewChild } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { RouterModule, RouterOutlet } from '@angular/router';
 import { NavigationBarComponent } from './navigation-bar/navigation-bar.component';
 import { BiographieComponent } from './biographie/biographie.component';
 import { HoveredImageComponent } from './hovered-image/hovered-image.component';
@@ -20,6 +20,7 @@ import { SkillsComponent } from './skills/skills.component';
   selector: 'app-root',
   standalone: true,
   imports: [
+
     RouterOutlet,
     NavigationBarComponent,
     BiographieComponent,
@@ -46,13 +47,16 @@ export class AppComponent  {
   
     if (element) {
       if (Id === "Milestones") {
-        console.log("milestones");
+        
         const yOffset = 0; // Offset by 30 pixels for Milestones
         const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+        console.log(y);
         window.scrollTo({ top: y, behavior: 'smooth' });
       } else {
+        
         const yOffset = -80; // Offset by -80 pixels for other elements
         const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
+        console.log(y);
         window.scrollTo({ top: y, behavior: 'smooth' });
       }
     }

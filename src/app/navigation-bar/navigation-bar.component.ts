@@ -1,4 +1,4 @@
-import { Component,ViewChild,ElementRef, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter } from '@angular/core';
 import { LanguageToggleComponent } from '../language-toggle/language-toggle.component';
 @Component({
   selector: 'navigation-bar',

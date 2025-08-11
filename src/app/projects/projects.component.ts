@@ -62,7 +62,7 @@ export class ProjectsComponent {
           Technologies:
             'Python, Yolo, OpenCV, Matplotlib, WebSocket, Javascript',
           Link: 'https://github.com/diaeddine1/WebSocket-Server.git',
-          Image: '../../assets/Prediction4.png', // Add Image property
+          Image: '../../assets/Prediction6.png', // Add Image property
         },
         {
           language: 'French',
@@ -72,7 +72,7 @@ export class ProjectsComponent {
             "Une application Flutter qui permet aux utilisateurs de rechercher des herbes médicinales et des plantes, d'explorer leurs bienfaits pour la santé et de découvrir des combinaisons efficaces avec d'autres herbes pour améliorer le bien-être. L'application offre une interface intuitive, une base de données détaillée d'herbes et des suggestions personnalisées pour des solutions de santé holistiques.",
           Technologies: 'Flutter, Firebase, Image Picker',
           Link: 'https://github.com/diaeddine1/Plants-Project-Flutter',
-          Image: '../../assets/Prediction4.png', // Add Image property
+          Image: '../../assets/Iplant.png', // Add Image property
         },
         {
           language: 'French',
@@ -83,7 +83,7 @@ export class ProjectsComponent {
           Technologies:
             'Spring Boot, React, Spring Security, Scrapy, Tailwind CSS, Google Maps API',
           Link: 'https://github.com/diaeddine1/Gestion_Restaurant',
-          Image: '../../assets/Prediction4.png', // Add Image property
+          Image: '../../assets/trip advisor.png', // Add Image property
         },
       ],
     },
