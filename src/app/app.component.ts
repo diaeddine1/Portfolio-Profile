@@ -42,23 +42,40 @@ import { SkillsComponent } from './skills/skills.component';
 
 export class AppComponent  {
  
-  scrollToId(Id: string): void {
-    const element = document.getElementById(Id);
+  constructor() { }
+
+  scrollTo(Id: string): void {
+  console.log("scrolling to", Id);
+  const element = document.getElementById(Id);
+  console.log("clicked on", element);
   
-    if (element) {
-      if (Id === "Milestones") {
-        
-        const yOffset = 0; // Offset by 30 pixels for Milestones
-        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-        console.log(y);
-        window.scrollTo({ top: y, behavior: 'smooth' });
-      } else {
-        
-        const yOffset = -80; // Offset by -80 pixels for other elements
-        const y = element.getBoundingClientRect().top + window.scrollY + yOffset;
-        console.log(y);
-        window.scrollTo({ top: y, behavior: 'smooth' });
+  if (element) {
+    const targetPosition = element.offsetTop;
+    const startPosition = window.pageYOffset;
+    const distance = targetPosition - startPosition;
+    const duration = 1000; // 1 second
+    let start = 0;
+
+    const step = (timestamp: number) => {
+      if (!start) start = timestamp;
+      const progress = timestamp - start;
+      const progressPercentage = Math.min(progress / duration, 1);
+      
+      // Easing function for smooth animation
+      const ease = this.easeInOutCubic(progressPercentage);
+      
+      window.scrollTo(0, startPosition + (distance * ease));
+      
+      if (progress < duration) {
+        window.requestAnimationFrame(step);
       }
-    }
+    };
+    
+    window.requestAnimationFrame(step);
   }
+}
+
+private easeInOutCubic(t: number): number {
+  return t < 0.5 ? 4 * t * t * t : (t - 1) * (2 * t - 2) * (2 * t - 2) + 1;
+}
 }
